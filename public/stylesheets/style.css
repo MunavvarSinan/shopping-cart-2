@@ -1,0 +1,10 @@
+.cart-item-count{
+    border: none;
+    background: #6585a7;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    margin-block-end: auto;
+}
