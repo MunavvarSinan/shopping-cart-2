@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   
 });
 router.get('/add-product',function(req,res){
-  res.render('admin/add-product')
+  res.render('admin/add-products')
 })
 router.post('/add-product',(req,res)=>{
 
@@ -22,7 +22,7 @@ router.post('/add-product',(req,res)=>{
     console.log(id);
     image.mv('./public/product-images/'+id+'.jpg',(err)=>{
       if(!err){
-        res.render("admin/add-product")
+        res.render("admin/add-products")
       }else{
         console.log(err);
       }

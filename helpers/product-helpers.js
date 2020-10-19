@@ -4,11 +4,9 @@ var objectId=require('mongodb').ObjectID
 module.exports={
 
     addProduct:(product,callback)=>{
-       
+        product.Price=parseInt(product.Price)
         db.get().collection('product').insertOne(product).then((data)=>{
-            
             callback(data.ops[0]._id)
-
         })
     },
     getAllProducts:()=>{
